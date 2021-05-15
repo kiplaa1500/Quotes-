@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
 
-  numberOfLikes!: number;
+  // numberOfLikes: number = 0;
 
-  likeButtonClick() {
-    this.numberOfLikes++;
+  // likeButtonClick() {
+  //   this.numberOfLikes++;
 
-  };
-  dislikesButtonClick() {
-    this.numberOfLikes--;
+  // };
+  // dislikesButtonClick() {
+  //   this.numberOfLikes--;
 
-  }
+  // }
 
   constructor() { }
 
