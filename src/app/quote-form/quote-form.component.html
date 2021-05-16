@@ -2,43 +2,41 @@
   <form (ngSubmit)="submitQuote()">
 
     <br>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="name"><strong>Your Name:</strong></label>
-          <input type="text" name="publisher" class="form-control" id="exampleFormControlInput1"
-            [(ngModel)]="quotePublisher" placeholder="Write Your Name Here:">
-        </div>
-      </div>
-      
-
-      <div class="col-md-6">
-        <div class="form-group" id="text">
-          <label for="quotes" style="font-size: 20px;"><strong>Quotes:</strong></label>
-          <br>
-          <textarea type="text" name="quote" class="form-control" id="exampleFormControlInput1" [(ngModel)]="quoteStr"
-            placeholder="Add Your Quote Here:" cols="100" rows="5"></textarea>
-        </div>
-      </div>
-
+    <div class="card">
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label for="author"><strong>Author:</strong></label>
-            <input type="text" name="author" class="form-control" id="exampleFormControlInput1"
-              [(ngModel)]="quoteAuthor" placeholder="Add Name of the Author Here:">
+            <label for="name" style="font-size: 20px;"><strong>Your Name:</strong></label>
+            <input type="text" name="publisher" class="form-control" id="exampleFormControlInput1"
+              [(ngModel)]="quotePublisher" placeholder="Write Your Name Here:">
           </div>
         </div>
 
-        <br>
-        <br>
-        <br><br>
-        <br>
 
         <div class="col-md-6">
-          <button type="submit" class="btn btn-primary">Add Quote</button>
+          <div class="form-group" id="text">
+            <label for="quotes" style="font-size: 20px;"><strong>Quotes:</strong></label>
+            <br>
+            <textarea type="text" name="quote" class="form-control" id="exampleFormControlInput1" [(ngModel)]="quoteStr"
+              placeholder="Add Your Quote Here:" cols="100" rows="5" style="font-size: 20px;"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="author" style="font-size: 20px;"><strong>Author:</strong></label>
+              <input type="text" name="author" class="form-control" id="exampleFormControlInput1"
+                [(ngModel)]="quoteAuthor" placeholder="Add Name of the Author Here:">
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <button style="font-size: 20px;" type="submit" class="btn btn-primary">Add Quote</button>
+          </div>
         </div>
       </div>
     </div>
   </form>
+   
 </div>

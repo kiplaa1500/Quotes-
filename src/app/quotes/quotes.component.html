@@ -6,21 +6,22 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-      <hr>
-      <div class="myQuote" *ngFor="let quote of quotes; let i=index">
-        <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</p>
-        <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
-        <app-details [quote]="quote"></app-details>
-
-       
-        <button class="success" (click)="upvote(i)">Upvote</button>
-        <button class="danger" (click)="downvote(i)">Downvote</button>
-        <button class="danger1" (click)="delQuote(i)">Delete</button>
-
+    <div class="card">
+      <!-- <div class="ro-md-6"> -->
         <hr>
+        <div class="myQuote" *ngFor="let quote of quotes; let i=index">
+          <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</p>
+          <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
+          <app-details [quote]="quote"></app-details>
 
-      </div>
+
+          <button class="success" (click)="upvote(i)">Upvote</button>
+          <button class="danger" (click)="downvote(i)">Downvote</button>
+          <button class="danger1" (click)="delQuote(i)">Delete</button>
+
+          <hr>
+
+        </div>
+      <!-- </div> -->
     </div>
   </div>
-</div>

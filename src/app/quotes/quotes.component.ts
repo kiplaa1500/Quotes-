@@ -7,7 +7,8 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes = [new Quote("Life Quote", "Dennis Kiplangat", "What you think is right. Dont let people make the decision of right or wrong for you"),
-    new Quote("Courage Quote", "Mark Too", "Courage is not the absence of fear, but the decision that something is more important than fear")]
+    new Quote("Courage Quote", "Mark Too", "Courage is not the absence of fear, but the decision that something is more important than fear"),
+    new Quote("Work quote", "Sawe", "Be proud of how hard you are working ")]
   preNum: number
   lastNum: number
   counter: number
