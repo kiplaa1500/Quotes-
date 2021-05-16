@@ -1,10 +1,29 @@
-<!-- <div>
+<div class="container-fluid">
+  <h1>QUOTES</h1>
+  <img src="assets/images/like-dislike.png">
+</div>
 
-  <p>{{numberOfLikes}}</p>
+<app-quote-form (emitQuote)="addQuote($event)"></app-quote-form>
 
-  <button class="btn btn-success"(click)
-  ="likeButtonClick()">Like</button>
-  <button class="btn btn-danger"(click)
-  ="dislikesButtonClick()">Dislike</button>
-</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <hr>
+      <div class="myQuote" *ngFor="let quote of quotes; let i=index">
+        <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.quote}}</p>
+        <p *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.quote}}</p>
+        <app-details [quote]="quote"></app-details>
 
+        <!-- <hr size="50"> -->
+
+
+        <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
+        <button class="btn" (click)="downvote(i)">Downvote</button>
+        <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+
+        <hr>
+
+      </div>
+    </div>
+  </div>
+</div>
