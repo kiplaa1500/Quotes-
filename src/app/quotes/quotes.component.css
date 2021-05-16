@@ -1,0 +1,16 @@
+h1{
+    text-align:center;
+}
+
+
+.success{
+    background-color: green;
+}
+
+.danger{
+    background-color:rgb(243, 155, 155);
+}
+
+.danger1{
+    background-color: red;
+}
