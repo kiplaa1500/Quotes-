@@ -1,5 +1,8 @@
-# Quotes
+# Author 
+Dennis Kiplangat Cheruiyot
 
+
+# Quotes
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
 ## Development server
@@ -25,3 +28,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Live Demo
+To view the page click here: [QUOTES](https://kiplaa1500.github.io/Quotes-/)
+
+## Technology Used
++ Angular JS
++ HTML 
++ CSS
++Bootsrap
+## Contact us 
+Feel free to reach out to us on 
+kiplangatdennis99@gmail.com
